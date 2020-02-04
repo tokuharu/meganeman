@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+margin:0;
+color:#313131;
+}
+
+img{
+outline:none;
+border-style:none;
+}
+
+a{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:visited{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:hover {
+    color: #F5A862;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*****HEADER*****/
+header{
+    display: block;
+    width:60%;
+    margin-left: 20%;
+    overflow: hidden;
+}
+header h1{
+    font-size:120%;  /*フォントサイズの調整*/
+    color:#313131;  /*文字色の変更*/
+    padding-top: 10px;  /*文字上部に余白*/
+    padding-bottom: 10px; /*文字下部に余白*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px; /*文字左側に余白*/
+    padding-right: 20px;  /*文字右側に余白*/
+    border:1px solid #313131; /*文字の周りに線を描く*/
+    border-radius: 5px; /*線の角に丸みをつける*/
+    letter-spacing: 3px;  /*文字と文字の間隔を開ける*/
+    font-weight:400;  /*文字の太さの変更*/
+    float: left;
+}
+header p{
+    font-size:100%; /*フォントサイズの調整*/
+    color:#313131;  /*文字色の変更*/
+    float: left;
+}
+
+/*****BRANDING*****/
+#branding{
+    display: block;
+    width: 60%; /*横幅指定*/
+    margin-left: 20%; /*左端から２０％右に動かす*/
+    overflow: hidden; /*おまじない*/
+    background-color: #313131;  /*背景色の指定*/
+    margin-bottom: 20px;
+    letter-spacing: 10px; /*文字と文字の間隔を開ける*/
+    line-height: 300px; /*行間の指定(ブランディングの高さを決める)*/
+}
+#branding p{
+    color: #fff;  /*文字色の変更*/
+    font-size: 120%;  /*フォントサイズの調整*/
+    padding-left: 3%; /*文字の左側に余白を開ける*/
+}
+
+/*****NAV*****/
+nav{
+    width: 100%;  /*横幅指定*/
+    border-top: 1px solid orange; /*上部の線の色を指定*/
+    border-bottom: 1px solid orange;  /*下部の線の色を指定*/
+    margin-bottom: 5px;
+    overflow: hidden; /*おまじない*/
+}
+nav ul{
+    width: 60%; /*横幅指定*/
+    margin-left: 20%; /*左端から２０％右に動かす*/
+}
+nav li{
+    width: calc(25% - 2px); /*横幅の指定(線の分をマイナスする)*/
+    font-size: 110%;
+    letter-spacing: 5px;
+    font-weight: 400;
+    line-height: 45px;
+    border-left: 1px solid orange;  /*線を描く*/
+    color: #313131;
+    cursor: pointer;
+    text-align: center; /*文字を中央に*/
+    float: left;  /*左から並べる*/
+}
+nav li:last-child{
+    border-right: 1px solid orange; /*li要素の最後の物は右側に線を描く*/
+}
+
+nav li:hover{
+    background-color: orange; /*背景色の指定*/
+    transition: background-color 0.5s ease-out; /*ホバー時の動きをなめらかにする*/
+    color: #fff;  /*文字色の変更*/
+}
+
+/*****ARTICLE*****/
+section{
+    display: block;
+    width: 60%;
+    margin: 20px auto;  /*上下２０px 左右中央*/
+    overflow: hidden;
+}
+article{
+    width: calc(50% - 15px);  /*横幅の指定(線の分をマイナスする)*/
+    padding: 2.5%;  /*余白の指定*/
+    margin-bottom: 30px;
+    background-color: #f9f9f9;  /*背景色の指定*/
+    overflow: hidden; /*おまじない*/
+    float: left;  /*左から並べる*/
+}
+article:nth-child(2n){
+    margin-left: 30px;  /*２の倍数の記事は左側に余白を３０px*/
+}
+article .date{
+    font-size: 60%; /*フォントサイズの調整*/
+    color: orange;  /*文字色の変更*/
+    border: 1px solid orange; /*線を描く*/
+    padding-top:3px;  /*文字上部に余白*/
+    padding-bottom: 3px;  /*文字下部に余白*/
+    padding-right: 6px; /*文字右側に余白*/
+    padding-left: 6px;  /*文字左側に余白*/
+    letter-spacing: 5px;  /*文字と文字の間隔を開ける*/
+    float: left;  /*左から並べる*/
+}
+article h1{
+    width: 100%;  /*横幅の指定*/
+    font-size: 150%;  /*フォントサイズの調整*/
+    color: #313131; /*文字色の変更*/
+    letter-spacing: 3px;  /*文字と文字の間隔を開ける*/
+    padding-bottom:2px; /*文字下部に余白*/
+    padding-top: 10px;  /*文字上部に余白*/
+    border-bottom: 1px solid #bababa; /*文字の下部に線を描く*/
+    margin-bottom: 15px;  /*セクションタイトルの下に余白をつくる*/
+    float: left;  /*左から並べる*/
+}
+article p{
+    font-size: 100%;  /*フォントサイズの調整*/
+    color: #313131; /*文字色の変更*/
+    letter-spacing: 3px;  /*文字と文字の間隔を開ける*/
+    line-height: 200%;  /*行間を開ける*/
+    margin-bottom: 10px;  /*文字とボタンの間をあける*/
+    float: left;  /*左から並べる*/
+}
+article .btn{
+    color: #fff;  /*文字色の変更*/
+    border: 1px solid orange; /*線を描く(ホバー時のズレを防ぐため)*/
+    background-color: orange;  /*背景色の指定*/
+    padding-top: 10px;  /*文字上部に余白*/
+    padding-bottom: 10px; /*文字下部に余白*/
+    padding-right: 30px;  /*文字右側に余白*/
+    padding-left: 30px; /*文字左側に余白*/
+    border-radius: 5px; /*線の角を丸くする*/
+    letter-spacing: 5px;  /*文字と文字の間隔を開ける*/
+    text-decoration: none;  /*ブラウザ標準のリンク装飾をオフに*/
+    overflow: hidden; /*おまじない*/
+    float: right; /*左から並べる*/
+}
+article .btn:hover{
+    background-color: #fff;  /*背景色の指定*/
+    border: 1px solid orange; /*線を描く*/
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s; /*ホバー時の変化をなめらかに*/
+    color: orange;  /*文字色の変更*/
+    overflow: hidden; /*おまじない*/
+}
+
+footer{
+    font-size: 80%;  /*フォントサイズの調整*/
+    width: 100%;  /*横幅の指定*/
+    text-align: center; /*文字の中央寄せ*/
+    padding-top: 10px;  /*文字上部に余白*/
+    padding-bottom: 10px; /*文字下部に余白*/
+    background-color: #313131;   /*背景色の指定*/
+}
+footer address{
+    color: #fff;   /*文字色の変更*/
+    letter-spacing: 5px;  /*文字と文字の間隔を開ける*/
+}
